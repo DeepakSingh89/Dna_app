@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_bg"
+    tools:context=".Activities.QbankStartTestActivity">
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginRight="20dp">
+
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/applogo"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/logo_with_title" />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/test_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/linear1"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="25dp"
+                android:text="Introducion to Anatomy"
+                android:textColor="@color/black_titles"
+                android:textSize="@dimen/text_large" />
+
+            <LinearLayout
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:id="@+id/pause_image"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/paused_icon" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/test_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:textSize="14dp"
+                    android:text="You have paused this module on 13 Dec" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/orange" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/new_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:textColor="@color/dark_gray"
+            android:text="2 Fresh Mcq added"
+            android:textSize="@dimen/ts_16" />
+
+        <LinearLayout
+            android:id="@+id/detailLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/new_text"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/start_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:elevation="10dp"
+                            app:cardElevation="10dp">
+
+                            <TextView
+                                android:id="@+id/total_questions"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="26 MCQs"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:id="@+id/completed_question"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:paddingTop="20dp"
+                                android:text="0 Completed"
+                                android:textSize="14dp" />
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5">
+
+                        <Button
+                            android:id="@+id/start_test"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorAccent"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="SOLVE"
+                            android:elevation="@dimen/dp_2"
+                            android:textColor="@color/white" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/bookmark_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:id="@+id/bookmarLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="15dp"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/review_result_question_icon" />
+
+                        <TextView
+                            android:id="@+id/totalBookmark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="12dp"
+                            android:text="0 Bookmarks"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/bookmark_arrow" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/detailLL"
+            android:orientation="vertical"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/dataView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/youperfromed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:text="You performed better than"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/curved"
+                        android:layout_width="130dp"
+                        android:layout_height="100dp"                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/qbank_result_graph"
+                        android:gravity="center"
+                        android:text="1 %"
+                        android:textColor="@color/orange"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/peerss"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:text="of yours peers"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="220dp"
+                        android:layout_height="3dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/profile_cardview" />
+
+                    <TextView
+                        android:id="@+id/yousolved"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:text="You solved 24 high yield MCQs and got 29% correct"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <com.dnamedical.views.CustomSeekBar
+                        android:id="@+id/seekBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+
+                        android:progressTint="@color/colorAccent"
+                        android:progressDrawable="@android:color/transparent"
+                        android:thumbOffset="1dp" />
+
+
+                    <!--        <Seekbar-->
+                    <!--            android:id="@+id/seekbar"-->
+                    <!--            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"-->
+                    <!--            android:layout_width="match_parent"-->
+                    <!--            android:layout_height="wrap_content"-->
+                    <!--            android:layout_marginLeft="20dp"-->
+                    <!--            android:layout_marginTop="20dp"-->
+                    <!--            android:layout_marginRight="30dp"-->
+                    <!--            android:background="@color/green" />-->
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|end"
+
+                        android:layout_weight="1">
+                        <View
+                            android:id="@+id/incorrectView"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/circlered"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/text_incorrect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginStart="@dimen/dp_5"
+                            android:text="7 correct"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        android:layout_weight="1">
+                        <View
+                            android:id="@+id/correctView"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/circlecorrect"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/correct_answer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginStart="@dimen/dp_5"
+                            android:text="7 correct"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:layout_weight="1">
+                        <View
+                            android:id="@+id/skkiped"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/circleskip"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/skkiped_answer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|start"
+                            android:layout_marginStart="@dimen/dp_5"
+                            android:text="7 correct"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="220dp"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/profile_cardview" />
+
+                <Button
+                    android:id="@+id/reviewbutton"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/orange"
+                    android:gravity="center"
+                    android:text="REVIEW LESSON"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/skipreviewandexit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="Skip review and exit"
+                    android:textColor="@color/orange"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

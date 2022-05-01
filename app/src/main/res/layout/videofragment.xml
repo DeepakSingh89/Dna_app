@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="5dp"
+    android:visibility="gone"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:id="@+id/relative_head"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/normalwhite"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:text="Video Classes"
+            android:textColor="@color/orange"
+
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:text="Comming Soon"-->
+        <!--android:textColor="@color/orange" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:visibility="visible">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="8dp">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alignmentMode="alignMargins"
+                android:columnCount="2"
+                android:columnOrderPreserved="false"
+                android:rowCount="3">
+
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="170dp"
+                    android:layout_columnWeight="1"
+
+                    android:layout_margin="10dp"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/video_border"
+
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="64dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+
+                        app:srcCompat="@drawable/biology" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="BIOLOGY"
+                        android:textColor="@color/orange"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="1/81 videos watched"
+                        android:textColor="@color/vediobordertextcolor"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="170dp"
+                    android:layout_columnWeight="1"
+
+                    android:layout_margin="10dp"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/video_border"
+
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        app:srcCompat="@drawable/chemistry" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="CHEMISTRY"
+                        android:textColor="@color/orange"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="1/72 videos watched"
+
+                        android:textColor="@color/vediobordertextcolor"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="170dp"
+                    android:layout_columnWeight="1"
+
+                    android:layout_margin="10dp"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/video_border"
+
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="64dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/phycology" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="PHYSIOLOGY"
+                        android:textColor="@color/orange"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="1/54 videos watched"
+                        android:textColor="@color/vediobordertextcolor"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="170dp"
+                    android:layout_columnWeight="1"
+
+                    android:layout_margin="10dp"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/video_border"
+
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="64dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/microbiology" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="MICROBIOLOGY"
+                        android:textColor="@color/orange"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="1/36 videos watched"
+
+                        android:textColor="@color/vediobordertextcolor"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="170dp"
+                    android:layout_columnWeight="1"
+
+                    android:layout_margin="10dp"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/video_border"
+
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="64dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/pharmacology" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="PHARMACOLOGY"
+                        android:textColor="@color/orange"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="1/81 videos watched"
+
+                        android:textColor="@color/vediobordertextcolor"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="170dp"
+                    android:layout_columnWeight="1"
+
+                    android:layout_margin="10dp"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/video_border"
+
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="64dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/biochemistry" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="BIOCHEMISTRY"
+                        android:textColor="@color/orange"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="1/12 videos watched"
+                        android:textColor="@color/vediobordertextcolor"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+            </GridLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

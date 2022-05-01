@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dnamedical">
+    <!-- hi -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- <uses-permission android:name="android.permission.CAMERA" /> -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.Camera"
+        android:required="false" />
+
+    <application
+        android:name=".DNAApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/dnalogo"
+        android:label="DNA"
+        android:roundIcon="@drawable/dnalogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:label">
+        <activity
+            android:name=".Activities.ModuleQBankActivity"
+            android:label="QBank"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Activities.ModuleTestActivity"
+            android:label="Test"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+
+
+        <activity
+            android:name=".Activities.CategoryModulesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+
+
+        <activity
+            android:name=".Activities.AllInstituteActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+
+
+        <activity
+            android:name=".Activities.ChangePhoneNumberOtypVarification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ChanePhoneNumberActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Activities.InstituteTestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.RemarksActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.SubscriptionPaymentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Activities.PlanPaymentProceesingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.TestV1Activity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".Activities.EnterMobileAndEmailActivity" />
+        <activity
+            android:name=".Activities.UpdateAddressActivity"
+            android:label="Edit Address"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme5" />
+
+        <service
+            android:name=".Activities.MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".Activities.ForgetPasswordSendEmailActiivty"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme5" />
+        <activity
+            android:name=".Activities.ForgetPasswordEmailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme5" />
+        <activity
+            android:name=".Activities.AddressListActivity"
+            android:label="Shipping Address"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme5" />
+        <activity
+            android:name=".Activities.PaymentCoupenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme6" />
+        <activity
+            android:name=".Activities.PaymentDetailActivity"
+            android:label="Payment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme5" />
+        <activity
+            android:name=".Activities.PaymentAddressSaveActivity"
+            android:label="Address"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme5" />
+        <activity
+            android:name=".Activities.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.IdVerificationActivitty"
+            android:label="Verification "
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme5" />
+        <activity
+            android:name=".Activities.EditProfileActivity"
+            android:label="Edit Profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme5" />
+        <activity android:name=".Activities.AboutUsActivit" />
+        <activity
+            android:name=".Activities.FranchiActivity"
+            android:label="Query"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme5" />
+        <activity
+            android:name=".Activities.AttemptingQuestionActivity"
+            android:label="Query"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme5" />
+        <activity
+            android:name=".Activities.TestReviewResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.QBankReviewResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.PromoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme6" />
+        <activity
+            android:name=".Activities.QbankReviewResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.QbankAddFeedbackActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Activities.QbankResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Activities.QbankRatingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Activities.QbankTestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme6" />
+        <activity
+            android:name=".Activities.BookmarkActivity"
+            android:label="MCQ Bookmarks"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme5" />
+        <activity
+            android:name=".Activities.QbankStartTestActivity"
+            android:label="Amino acid:Metabolism"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Activities.QbankSubActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ReviewQuestionList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ReviewresulActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme6">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <data
+                    android:host="open"
+                    android:scheme="dnaapp" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <!-- Branch App Links -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="dnaapp.app.link"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.FirstloginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.AddressForSubscriptionListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.RegistrationActivity"
+            android:parentActivityName=".Activities.FirstloginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.TheorybookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.PaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.PhoneloginActivity"
+            android:parentActivityName=".Activities.FirstloginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".Activities.VedioClassesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.VerifyOTPActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Activities.PlanPaymentProceesingForSSUGActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".Activities.NeetPgActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2"/>
+        <activity
+            android:name=".Activities.ShoppingActivty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.LiveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.DNAFacultyActivity"
+            android:label="Faculty"
+            android:parentActivityName=".Activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Activities.DNASuscribeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.DNAKnowmoreActivity"
+            android:label="Know More"
+            android:parentActivityName=".Activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Activities.ContactUsActivity"
+            android:label="Contact Us"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+
+
+        <activity
+            android:name=".Activities.TestUGV1Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+
+        <activity android:name=".Activities.DNASettingActivity" />
+        <activity
+            android:name=".Activities.Noticeboard"
+            android:label="Notice Board"
+            android:parentActivityName=".Activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Activities.DNAProfileActivity"
+            android:label="Profile"
+            android:parentActivityName=".Activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Activities.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.VideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.VideoPlayerActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.TestStartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.TestStartDailyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Mobilenumber"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.TestQuestionExamActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ResultActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".Activities.MyMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".messageReceiver.SmsReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".messageReceiver.PushNavigateReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="custom.notification.navigation" />
+            </intent-filter>
+        </receiver>
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service
+            android:name=".FetchAddressIntentService"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_GPmJIkGzNlDISO" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="dfe8483de641ade0780acac1920014763432dd86" />
+    </application>
+
+</manifest>

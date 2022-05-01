@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.QbankRatingActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/qbank_feedback_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="Module Completed"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear1"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Please rate the QBank module"
+                android:textSize="14sp" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxHeight="45dp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear_rating"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:text="What went wrong?"
+                    android:textColor="@color/black_titles"
+                    android:textSize="@dimen/ts_16" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:id="@+id/too_hard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/profile_cardtext"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/ts_20"
+                    android:paddingTop="10dp"
+                    android:paddingRight="@dimen/ts_20"
+                    android:paddingBottom="10dp"
+                    android:text="Too hard"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ts_16" />
+
+                <TextView
+                    android:id="@+id/too_easy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/profile_cardtext"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/ts_20"
+                    android:paddingTop="10dp"
+                    android:paddingRight="@dimen/ts_20"
+                    android:paddingBottom="10dp"
+                    android:text="Too easy"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ts_16" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/too_much_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/profile_cardtext"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Too much content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ts_16" />
+
+                <TextView
+                    android:id="@+id/too_little_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/profile_cardtext"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Too little Content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ts_16" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/no_neet_pattern"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/profile_cardtext"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Explanations are not clear"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ts_16" />
+
+                <TextView
+                    android:id="@+id/need_more_images"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/profile_cardtext"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Need more images"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ts_16" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/explanation_not_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/profile_cardtext"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:paddingLeft="30sp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="@dimen/ts_20"
+                    android:paddingBottom="10dp"
+                    android:visibility="gone"
+                    android:text="Explanations are not clear"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ts_16" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lacks_concepts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/profile_cardtext"
+                    android:padding="10dp"
+                    android:text="Lacks concepts"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ts_16" />
+
+                <TextView
+                    android:id="@+id/poorly_orgainez"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/profile_cardtext"
+                    android:padding="10dp"
+                    android:text="Poorly organized"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ts_16" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/add_feedback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="Add Feedback"
+                    android:textColor="@color/colorPrimary"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/submit_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5sp"
+                    android:background="@color/colorAccent"
+                    android:text="Submit" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
